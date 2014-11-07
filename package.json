@@ -1,6 +1,6 @@
 {
   "name": "react-spin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A React component wrapper for spin.js",
   "main": "src/main.js",
   "scripts": {
@@ -15,9 +15,7 @@
   },
 
   "dependencies": {
-    "spin.js": "^2.0.1"
-  },
-  "peerDependencies": {
-    "react": "^0.11.2"
+    "spin.js": "^2.0.1",
+    "react": "^0.12.0"
   }
 }
