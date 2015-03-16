@@ -16,7 +16,7 @@ var ReactSpinner = React.createClass({
     if (newProps.stopped === true && !this.props.stopped) {
       this.spinner.stop();
     } else if (!newProps.stopped && this.props.stopped === true) {
-      this.spinner.spin();
+      this.spinner.spin(this.refs.container.getDOMNode());
     }
   },
 
