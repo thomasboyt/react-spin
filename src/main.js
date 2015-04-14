@@ -26,7 +26,7 @@ var ReactSpinner = React.createClass({
 
   render: function() {
     return (
-      <span ref="container" />
+      React.createElement("span", {ref: "container"})
     );
   }
 });
