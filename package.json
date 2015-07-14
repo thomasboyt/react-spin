@@ -1,10 +1,12 @@
 {
   "name": "react-spin",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A React component wrapper for spin.js",
-  "main": "src/main.js",
+  "main": "lib/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "scripts/build",
+    "prepublish": "npm run build"
   },
 
   "author": "Thomas Boyt",
@@ -12,6 +14,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/thomasboyt/react-spin"
+  },
+
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "babel-core": "^5.6.18",
+    "babel-eslint": "^3.1.15",
+    "eslint": "^0.23",
+    "eslint-plugin-react": "^2.3.0"
   },
 
   "dependencies": {
