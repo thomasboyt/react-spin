@@ -27,8 +27,10 @@ const ReactSpinner = React.createClass({
   },
 
   render: function() {
+    const { config, stopped, ...props } = this.props; // Filter out own props
+
     return (
-      <span ref="container" />
+      <span {...props} ref="container" />
     );
   }
 });
