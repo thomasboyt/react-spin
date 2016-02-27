@@ -9,7 +9,9 @@ var ReactSpinner = React.createClass({
 
   componentDidMount: function() {
     this.spinner = new Spinner(this.props.config);
-    this.spinner.spin(this.refs.container);
+    if (!this.props.stopped) {
+      this.spinner.spin(this.refs.container);
+    }
   },
 
   componentWillReceiveProps: function(newProps) {
