@@ -5,6 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "test": "karma start --single-run --browsers Firefox",
+    "lint": "eslint src/",
     "build": "rimraf lib && babel src --out-dir lib --ignore *.spec.js",
     "prepublish": "npm run build"
   },
