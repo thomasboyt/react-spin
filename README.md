@@ -1,3 +1,7 @@
+# react-spin
+
+[![Build Status](https://travis-ci.org/thomasboyt/react-spin.svg?branch=master)](https://travis-ci.org/thomasboyt/react-spin) [![npm](https://img.shields.io/npm/v/react-spin.svg)](https://www.npmjs.com/package/react-spin)
+
 Tiny React wrapper around [spin.js](http://fgnass.github.io/spin.js/).
 
 ## Usage
