@@ -1,7 +1,7 @@
-var React = require('react');
-var Spinner = require('spin.js');
+import React from 'react';
+import Spinner from 'spin.js';
 
-var ReactSpinner = React.createClass({
+const ReactSpinner = React.createClass({
   propTypes: {
     config: React.PropTypes.object,
     stopped: React.PropTypes.bool
@@ -33,4 +33,4 @@ var ReactSpinner = React.createClass({
   }
 });
 
-module.exports = ReactSpinner;
+export default ReactSpinner;

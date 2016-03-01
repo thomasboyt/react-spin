@@ -3,11 +3,10 @@ Tiny React wrapper around [spin.js](http://fgnass.github.io/spin.js/).
 ## Usage
 
 ```javascript
-/** @jsx React.DOM */
-var React = require('react');
-var Spinner = require('react-spin');
+import React from 'react';
+import Spinner from 'react-spin';
 
-var MyComponent = React.createClass({
+const MyComponent = React.createClass({
   render: function() {
     var spinCfg = {
       width: 12,
