@@ -1,11 +1,13 @@
 import expect from 'expect';
 import React from 'react';
+import TestUtils from 'react-addons-test-utils';
 
 import ReactSpinner from '../main';
 
 describe('<ReactSpinner />', () => {
   it('can be instantiated', () => {
-    const component = React.renderComponent(<ReactSpinner />, document.createElement('div'));
-    expect(component).toBeOk();
+    expect(() => TestUtils.renderIntoDocument(
+      <ReactSpinner />
+    )).toNotThrow()
   });
 });
