@@ -1,6 +1,6 @@
 {
   "name": "react-spin",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A React component wrapper for spin.js",
   "main": "lib/main.js",
   "scripts": {

@@ -1,3 +1,7 @@
+## v0.6.2 - Apr 23 2016
+
+* Configure Babel transforms so the bundled output works in IE8. Thanks [@SimenB](https://github.com/SimenB)!
+
 ## v0.6.1 - Apr 8 2016
 
 * Allow React 15.x as a peer dependency
