@@ -23,6 +23,7 @@
     "babel-plugin-transform-es2015-block-scoping": "^6.7.1",
     "babel-plugin-transform-es2015-function-name": "^6.5.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.7.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.5.0",
     "babel-plugin-transform-es3-property-literals": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "eslint": "^1.10.3",
