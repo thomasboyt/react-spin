@@ -6,8 +6,9 @@ import ReactSpinner from '../main';
 
 describe('<ReactSpinner />', () => {
   it('can be instantiated', () => {
-    expect(() => TestUtils.renderIntoDocument(
+    const component = TestUtils.renderIntoDocument(
       <ReactSpinner />
-    )).toNotThrow()
+    );
+    expect(component.refs.container.querySelector('.spinner')).toNotBe(null);
   });
 });
