@@ -42,6 +42,8 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
+    "create-react-class": "^15.5.3",
+    "prop-types": "^15.5.10",
     "spin.js": "^2.0.1"
   },
   "peerDependencies": {
