@@ -1,10 +1,12 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
 import Spinner from 'spin.js';
 
-const ReactSpinner = React.createClass({
+const ReactSpinner = createReactClass({
   propTypes: {
-    config: React.PropTypes.object,
-    stopped: React.PropTypes.bool
+    config: PropTypes.object,
+    stopped: PropTypes.bool
   },
 
   componentDidMount: function() {
