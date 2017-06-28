@@ -10,7 +10,7 @@ class ReactSpinner extends Component {
   componentDidMount() {
     this.spinner = new Spinner(this.props.config);
     if (!this.props.stopped) {
-      this.spinner.spin(this.refs.container);
+      this.spinner.spin(this.container);
     }
   }
 
@@ -18,7 +18,7 @@ class ReactSpinner extends Component {
     if (newProps.stopped === true && !this.props.stopped) {
       this.spinner.stop();
     } else if (!newProps.stopped && this.props.stopped === true) {
-      this.spinner.spin(this.refs.container);
+      this.spinner.spin(this.container);
     }
   }
 
@@ -28,7 +28,7 @@ class ReactSpinner extends Component {
 
   render() {
     return (
-      <span ref="container" />
+      <span ref={(container) => (this.container = container)} />
     );
   }
 }
