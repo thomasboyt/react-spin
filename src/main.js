@@ -1,36 +1,36 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import Spinner from 'spin.js';
 
-const ReactSpinner = React.createClass({
+class ReactSpinner extends Component {
   propTypes: {
-    config: React.PropTypes.object,
-    stopped: React.PropTypes.bool
-  },
+    config: PropTypes.object,
+    stopped: PropTypes.bool
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     this.spinner = new Spinner(this.props.config);
     if (!this.props.stopped) {
       this.spinner.spin(this.refs.container);
     }
-  },
+  }
 
-  componentWillReceiveProps: function(newProps) {
+  componentWillReceiveProps(newProps) {
     if (newProps.stopped === true && !this.props.stopped) {
       this.spinner.stop();
     } else if (!newProps.stopped && this.props.stopped === true) {
       this.spinner.spin(this.refs.container);
     }
-  },
+  }
 
-  componentWillUnmount: function() {
+  componentWillUnmount() {
     this.spinner.stop();
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <span ref="container" />
     );
   }
-});
+}
 
 export default ReactSpinner;
