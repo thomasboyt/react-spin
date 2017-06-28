@@ -20,7 +20,7 @@ before_script:
 
 script:
   # --silent surpresses that big ol' NPM script error
-  - npm run-script lint  --silent
+  - npm run-script lint --silent
   - npm run-script test --silent
 
 cache:
