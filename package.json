@@ -1,6 +1,6 @@
 {
-  "name": "react-spin",
-  "version": "0.6.2",
+  "name": "react-tiny-spin",
+  "version": "0.6.3",
   "description": "A React component wrapper for spin.js",
   "main": "lib/main.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomasboyt/react-spin"
+    "url": "https://github.com/captDaylight/react-tiny-spin"
   },
   "devDependencies": {
     "babel-cli": "^6.6.0",
