@@ -1,4 +1,4 @@
-# react-spin
+# react-tiny-spin
 
 Tiny React wrapper around [spin.js](http://fgnass.github.io/spin.js/).
 
