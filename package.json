@@ -4,7 +4,7 @@
   "description": "A React component wrapper for spin.js",
   "main": "lib/main.js",
   "scripts": {
-    "test": "karma start --single-run --browsers Firefox",
+    "test": "karma start --single-run --browsers Chrome",
     "lint": "eslint src/",
     "build": "rimraf lib && babel src --out-dir lib --ignore *.spec.js",
     "prepublish": "npm run build"
@@ -25,6 +25,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.7.0",
     "babel-plugin-transform-es3-property-literals": "^6.5.0",
     "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.24.1",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^4.1.0",
     "expect": "^1.14.0",
@@ -36,9 +37,9 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
-    "react": "^15.0.0",
-    "react-addons-test-utils": "^15.0.0",
-    "react-dom": "^15.6.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "rimraf": "^2.5.2",
     "webpack": "^1.12.14"
   },

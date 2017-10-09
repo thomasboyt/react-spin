@@ -1,11 +1,12 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import Spinner from 'spin.js';
 
-class ReactSpinner extends Component {
-  propTypes: {
+class ReactSpinner extends PureComponent {
+  static propTypes = {
     config: PropTypes.object,
     stopped: PropTypes.bool
-  }
+  };
 
   componentDidMount() {
     this.spinner = new Spinner(this.props.config);
