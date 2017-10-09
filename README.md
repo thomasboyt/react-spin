@@ -1,6 +1,4 @@
-# react-spin
-
-[![Build Status](https://travis-ci.org/thomasboyt/react-spin.svg?branch=master)](https://travis-ci.org/thomasboyt/react-spin) [![npm](https://img.shields.io/npm/v/react-spin.svg)](https://www.npmjs.com/package/react-spin)
+# react-tiny-spin
 
 Tiny React wrapper around [spin.js](http://fgnass.github.io/spin.js/).
 
@@ -8,18 +6,19 @@ Tiny React wrapper around [spin.js](http://fgnass.github.io/spin.js/).
 
 ```javascript
 import React from 'react';
-import Spinner from 'react-spin';
+import Spinner from 'react-tiny-spin';
 
-const MyComponent = React.createClass({
-  render: function() {
-    var spinCfg = {
-      width: 12,
-      radius: 35,
-      // ...
-    };
+const spinCfg = {
+  width: 12,
+  radius: 35,
+  // ...
+};
+
+class MyComponent extends React.Component {
+  render() {
     return <Spinner config={spinCfg} />
   }
-});
+}
 ```
 
 ## Properties
